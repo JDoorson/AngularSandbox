@@ -5,6 +5,8 @@ import { MatchRoutingModule } from './match-routing.module';
 import { MatchAddComponent } from './match-add/match-add.component';
 import { MatchListComponent } from './match-list/match-list.component';
 import { MatchListItemComponent } from './match-list-item/match-list-item.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { MatchService } from './match.service';
 
 
 @NgModule({
@@ -16,6 +18,9 @@ import { MatchListItemComponent } from './match-list-item/match-list-item.compon
   imports: [
     CommonModule,
     MatchRoutingModule
+  ],
+  providers: [
+    MatchService,
   ]
 })
 export class MatchModule { }
